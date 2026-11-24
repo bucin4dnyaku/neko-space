@@ -1,0 +1,1193 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bucin Neko Station — A Little Space in the Universe</title>
+
+<meta name="description" content="Website personal bertema retro cyber kawaii dengan jurnal digital, kucing astronot, kreativitas dan koleksi tautan.">
+
+<style>
+:root {
+    --bg: #100b20;
+    --panel: #211531;
+    --pink: #ed91d2;
+    --magenta: #c44ba4;
+    --purple: #b39ddb;
+    --border: #78549c;
+    --text: #e5d8ef;
+    --muted: #b49bc8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(#c8b1ef 1px, transparent 1px),
+        radial-gradient(#d56bb8 1px, transparent 1px),
+        radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 53px 53px, 97px 97px, 137px 137px;
+    background-position: 0 0, 30px 17px, 65px 35px;
+    color: var(--text);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.site {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 12px;
+    background: #170f27;
+    border: 2px solid var(--border);
+    box-shadow: 5px 5px #39234f;
+}
+
+/* SYSTEM BAR */
+
+.system-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    background: #36204e;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: var(--purple);
+    border: 1px solid var(--border);
+}
+
+.online {
+    color: #9fe8bf;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        135deg,
+        #211334,
+        #4c2158,
+        #27163c
+    );
+    padding: 45px 15px;
+    text-align: center;
+    border: 1px solid var(--border);
+    margin-top: 10px;
+}
+
+header h1 {
+    color: #f5b9e8;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 6vw, 55px);
+    margin: 10px 0;
+    text-shadow: 3px 3px #613b80;
+}
+
+header p {
+    color: #d6bde9;
+    margin: 5px;
+}
+
+.stars {
+    color: #f0a0dc;
+    letter-spacing: 9px;
+    animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .45; }
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+    margin: 10px 0;
+    background: #261735;
+    border: 1px solid var(--border);
+}
+
+nav a {
+    padding: 7px 15px;
+    background: #39234e;
+    border: 1px solid #9670ba;
+    color: #f3c0e7;
+    font-size: 12px;
+    box-shadow: 2px 2px #140d20;
+}
+
+nav a:hover {
+    background: #633778;
+    text-decoration: none;
+}
+
+/* LAYOUT */
+
+.layout {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr) 230px;
+    gap: 12px;
+    align-items: start;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    box-shadow: 3px 3px #100b20;
+}
+
+.panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: linear-gradient(
+        90deg,
+        #684081,
+        #472952
+    );
+    border-bottom: 1px solid var(--border);
+    color: #ffe0f4;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* NEKO ASTRONAUT */
+
+.astronaut {
+    width: 145px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+}
+
+.mascot {
+    padding: 15px 5px;
+    background: #171024;
+    border: 1px dashed #78549c;
+}
+
+.mood {
+    margin-top: 12px;
+    padding: 7px;
+    background: #20392f;
+    border: 1px solid #4e8069;
+    color: #a6e7c3;
+    font-size: 10px;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #2b1a40,
+        #46254e
+    );
+    border: 1px dashed #9164ad;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: #f4b6e7;
+    margin: 8px 0;
+}
+
+.kaomoji {
+    font-size: 22px;
+    color: var(--pink);
+}
+
+.space-art {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #78549c;
+    margin: 15px 0;
+}
+
+/* SIDEBAR */
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 7px 0;
+    border-bottom: 1px dashed #523966;
+}
+
+.menu li:last-child {
+    border: none;
+}
+
+/* BLOGROLL */
+
+.blogroll {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blogroll li {
+    margin-bottom: 10px;
+}
+
+.blogroll a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+    background: #39234c;
+    border: 1px solid #8d60ac;
+    color: #f5bce9;
+    font-size: 11px;
+    font-weight: bold;
+    transition: .2s ease;
+}
+
+.blogroll a:hover {
+    background: #62316e;
+    border-color: #ed91d2;
+    transform: translateX(3px);
+    text-decoration: none;
+}
+
+/* JOURNAL */
+
+article {
+    padding: 15px 0;
+    border-bottom: 1px dashed #65467b;
+}
+
+article:last-child {
+    border: none;
+}
+
+article h3 {
+    color: #edb1e4;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+article time {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #482c5f;
+    border: 1px solid #79529d;
+    color: #e0c5f6;
+    font-size: 10px;
+}
+
+/* STAMPS */
+
+.stamps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.stamp {
+    width: 88px;
+    height: 31px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #432857;
+    border: 2px outset #966db1;
+    color: #efc9f5;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.stamp.pink {
+    background: #6d365f;
+    color: #ffd4ed;
+}
+
+.stamp.green {
+    background: #294b40;
+    color: #ace6c8;
+}
+
+.notice {
+    background: #2e1c43;
+    border: 1px dashed #8c61ad;
+    padding: 12px;
+    font-size: 12px;
+}
+
+/* STATUS */
+
+.progress {
+    height: 10px;
+    background: #100b20;
+    border: 1px solid #78549c;
+    margin: 7px 0 12px;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #8761b7,
+        #ed91d2
+    );
+}
+
+footer {
+    padding: 20px 10px;
+    background: #2f1c43;
+    border: 1px solid var(--border);
+    text-align: center;
+    font-size: 11px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 175px minmax(0, 1fr);
+    }
+
+    .right {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .site {
+        margin: 8px;
+        padding: 7px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        grid-column: auto;
+    }
+
+    main {
+        order: -1;
+    }
+
+    header {
+        padding: 25px 12px;
+    }
+
+    nav a {
+        padding: 5px 9px;
+        font-size: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="site">
+
+<div class="system-bar">
+    <span>✦ NEKO_STATION.EXE</span>
+    <span class="online">● SYSTEM ONLINE</span>
+</div>
+
+<header id="home">
+
+    <div class="stars">
+        ✧ ☾ ☆ ♡ ☆ ☾ ✧
+    </div>
+
+    <h1>✦ Bucin Neko Station</h1>
+
+    <p>A Little Space in the Universe</p>
+
+    <div class="small">
+        Cats • Stars • Digital Dreams
+    </div>
+
+</header>
+
+<nav aria-label="Navigasi utama">
+    <a href="#home">⌂ Home</a>
+    <a href="#about">♡ About</a>
+    <a href="#journal">✎ Journal</a>
+    <a href="#blogroll">☆ Blogroll</a>
+    <a href="#updates">✦ Updates</a>
+</nav>
+
+<div class="layout">
+
+<!-- SIDEBAR KIRI -->
+
+<aside>
+
+<section class="panel" id="about">
+
+    <div class="panel-title">
+        <span>♡ Station Captain</span>
+        <span>☆</span>
+    </div>
+
+    <div class="panel-body center">
+
+        <div class="mascot">
+
+            <svg class="astronaut"
+                 viewBox="0 0 160 170"
+                 role="img"
+                 aria-label="Kucing astronot dengan pakaian lavender">
+
+                <ellipse cx="80" cy="158"
+                         rx="43" ry="7"
+                         fill="#46305e"/>
+
+                <!-- Badan -->
+
+                <rect x="48" y="92"
+                      width="64" height="56"
+                      rx="20"
+                      fill="#d9c8f2"
+                      stroke="#8868b0"
+                      stroke-width="3"/>
+
+                <!-- Tangan -->
+
+                <rect x="27" y="99"
+                      width="24" height="42"
+                      rx="12"
+                      fill="#e5d6f7"/>
+
+                <rect x="109" y="99"
+                      width="24" height="42"
+                      rx="12"
+                      fill="#e5d6f7"/>
+
+                <!-- Kaki -->
+
+                <rect x="50" y="137"
+                      width="24" height="20"
+                      rx="9"
+                      fill="#a98acc"/>
+
+                <rect x="86" y="137"
+                      width="24" height="20"
+                      rx="9"
+                      fill="#a98acc"/>
+
+                <!-- Helm -->
+
+                <circle cx="80" cy="61" r="53"
+                        fill="#a78bcf"
+                        stroke="#e6d5fa"
+                        stroke-width="3"/>
+
+                <circle cx="80" cy="61" r="44"
+                        fill="#51406f"/>
+
+                <!-- Kepala Neko -->
+
+                <path d="M42 53L38 23L63 37
+                         H97L122 23L118 53
+                         Q130 92 80 94
+                         Q30 92 42 53Z"
+                      fill="#fff1ec"/>
+
+                <path d="M45 34L57 42L46 48Z"
+                      fill="#e9a6ca"/>
+
+                <path d="M115 34L103 42L114 48Z"
+                      fill="#e9a6ca"/>
+
+                <!-- Mata -->
+
+                <ellipse cx="62" cy="63"
+                         rx="5" ry="7"
+                         fill="#624a73"/>
+
+                <ellipse cx="98" cy="63"
+                         rx="5" ry="7"
+                         fill="#624a73"/>
+
+                <!-- Pipi -->
+
+                <ellipse cx="49" cy="74"
+                         rx="8" ry="4"
+                         fill="#e9afcf"/>
+
+                <ellipse cx="111" cy="74"
+                         rx="8" ry="4"
+                         fill="#e9afcf"/>
+
+                <!-- Mulut -->
+
+                <path d="M76 71L80 75L84 71
+                         M80 75Q74 82 69 78
+                         M80 75Q86 82 91 78"
+                      fill="none"
+                      stroke="#a57a9d"
+                      stroke-width="2.5"/>
+
+                <!-- Refleksi Helm -->
+
+                <path d="M48 28Q65 11 85 17"
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-width="5"
+                      opacity=".55"
+                      stroke-linecap="round"/>
+
+                <!-- Panel Baju -->
+
+                <rect x="65" y="108"
+                      width="30" height="22"
+                      rx="4"
+                      fill="#70528f"/>
+
+                <circle cx="74" cy="119"
+                        r="3" fill="#f7a5d9"/>
+
+                <circle cx="85" cy="119"
+                        r="3" fill="#a6e8bc"/>
+
+            </svg>
+
+            <div class="kaomoji">
+                ฅ(•ω•)ฅ
+            </div>
+
+        </div>
+
+        <h3>Hello, I'm Bucin!</h3>
+
+        <p>
+            A tiny neko exploring the universe
+            of creativity and personal websites.
+        </p>
+
+        <div class="mood">
+            ● Mission Status: Active
+        </div>
+
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>✦ Navigation</span>
+        <span>♡</span>
+    </div>
+
+    <div class="panel-body">
+
+        <ul class="menu">
+            <li><a href="#home">☆ Homepage</a></li>
+            <li><a href="#about">☆ About Me</a></li>
+            <li><a href="#journal">☆ Space Journal</a></li>
+            <li><a href="#blogroll">☆ Website Links</a></li>
+            <li><a href="#updates">☆ Mission Logs</a></li>
+        </ul>
+
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>☆ Station Status</span>
+    </div>
+
+    <div class="panel-body">
+
+        Creativity
+        <div class="progress">
+            <span style="width:95%"></span>
+        </div>
+
+        Cat Energy
+        <div class="progress">
+            <span style="width:100%"></span>
+        </div>
+
+        Happiness
+        <div class="progress">
+            <span style="width:90%"></span>
+        </div>
+
+        <p class="small">
+            Just for fun — neko mood indicators.
+        </p>
+
+    </div>
+</section>
+
+</aside>
+
+<!-- KONTEN UTAMA -->
+
+<main>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>✦ Welcome, Space Traveler!</span>
+        <span>− □</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="hero">
+
+            <div class="kaomoji">
+                (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+            </div>
+
+            <h2>Welcome to Neko Station</h2>
+
+            <p>
+                A tiny digital planet filled with
+                imagination, little stories and cosmic dreams.
+            </p>
+
+            <div class="stars">
+                ✧ ♡ ☾ ♡ ✧
+            </div>
+
+        </div>
+
+        <!-- ILUSTRASI LUAR ANGKASA -->
+
+        <svg class="space-art"
+             viewBox="0 0 400 210"
+             role="img"
+             aria-label="Ilustrasi planet pastel dan kucing astronot">
+
+            <defs>
+                <linearGradient id="sky" x2="1" y2="1">
+                    <stop stop-color="#1d1438"/>
+                    <stop offset="1" stop-color="#50305f"/>
+                </linearGradient>
+            </defs>
+
+            <rect width="400" height="210"
+                  fill="url(#sky)"/>
+
+            <!-- Bintang -->
+
+            <g fill="#f6dbfa">
+                <circle cx="25" cy="25" r="2"/>
+                <circle cx="75" cy="60" r="1"/>
+                <circle cx="115" cy="20" r="2"/>
+                <circle cx="170" cy="40" r="1"/>
+                <circle cx="225" cy="15" r="2"/>
+                <circle cx="305" cy="28" r="2"/>
+                <circle cx="370" cy="63" r="1"/>
+                <circle cx="325" cy="100" r="2"/>
+                <circle cx="20" cy="115" r="1"/>
+                <circle cx="205" cy="95" r="2"/>
+            </g>
+
+            <!-- Planet Saturnus -->
+
+            <ellipse cx="100" cy="75"
+                     rx="70" ry="14"
+                     fill="none"
+                     stroke="#bba0e3"
+                     stroke-width="7"
+                     transform="rotate(-20 100 75)"/>
+
+            <circle cx="100" cy="75"
+                    r="43" fill="#c79cde"/>
+
+            <path d="M60 65Q100 84 140 62"
+                  fill="none"
+                  stroke="#e4b4e9"
+                  stroke-width="9"/>
+
+            <path d="M38 96Q100 110 166 48"
+                  fill="none"
+                  stroke="#ead1f3"
+                  stroke-width="7"/>
+
+            <!-- Planet Pink -->
+
+            <circle cx="315" cy="70"
+                    r="37" fill="#df8dbd"/>
+
+            <circle cx="304" cy="57"
+                    r="9" fill="#c879ac"/>
+
+            <circle cx="328" cy="79"
+                    r="6" fill="#c879ac"/>
+
+            <!-- Permukaan Bulan -->
+
+            <path d="M0 180Q200 100 400 180V210H0Z"
+                  fill="#a08abd"/>
+
+            <ellipse cx="72" cy="188"
+                     rx="30" ry="7"
+                     fill="#8d76aa"/>
+
+            <ellipse cx="300" cy="175"
+                     rx="28" ry="6"
+                     fill="#8d76aa"/>
+
+            <!-- Neko di Bulan -->
+
+            <rect x="177" y="137"
+                  width="46" height="46"
+                  rx="13"
+                  fill="#cbb5eb"/>
+
+            <circle cx="200" cy="116" r="33"
+                    fill="#b49cd7"
+                    stroke="#e8d8fa"
+                    stroke-width="3"/>
+
+            <circle cx="200" cy="116" r="27"
+                    fill="#64507e"/>
+
+            <path d="M179 113L176 94L190 105
+                     H210L224 94L221 113
+                     Q225 136 200 136
+                     Q175 136 179 113Z"
+                  fill="#fff1ec"/>
+
+            <ellipse cx="190" cy="118"
+                     rx="3" ry="4"
+                     fill="#65516d"/>
+
+            <ellipse cx="210" cy="118"
+                     rx="3" ry="4"
+                     fill="#65516d"/>
+
+            <ellipse cx="183" cy="125"
+                     rx="4" ry="2"
+                     fill="#e8aacd"/>
+
+            <ellipse cx="217" cy="125"
+                     rx="4" ry="2"
+                     fill="#e8aacd"/>
+
+            <path d="M197 124L200 127L203 124"
+                  fill="none"
+                  stroke="#9c7494"
+                  stroke-width="2"/>
+
+            <rect x="165" y="143"
+                  width="15" height="28"
+                  rx="7" fill="#e2d0f6"/>
+
+            <rect x="220" y="143"
+                  width="15" height="28"
+                  rx="7" fill="#e2d0f6"/>
+
+            <rect x="189" y="151"
+                  width="22" height="13"
+                  rx="3" fill="#79589c"/>
+
+            <!-- Bendera -->
+
+            <rect x="260" y="118"
+                  width="3" height="59"
+                  fill="#e7d2f7"/>
+
+            <path d="M263 118H303V143H263Z"
+                  fill="#e397cd"/>
+
+            <path d="M283 126
+                     C274 117 268 130 283 137
+                     C298 130 292 117 283 126"
+                  fill="#fff0fa"/>
+
+        </svg>
+
+        <p class="center">
+            Selamat datang di stasiun kecil milikku.
+            Sebuah tempat untuk menikmati kreativitas,
+            mempelajari teknologi, dan menjelajahi
+            dunia internet dengan imajinasi.
+        </p>
+
+    </div>
+</section>
+
+<section class="panel" id="updates">
+
+    <div class="panel-title">
+        <span>☆ Mission Logs</span>
+        <span>♡</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="notice">
+            <strong>24 November 2026</strong><br>
+            ✦ Neko Station project launched.<br>
+            ✦ Cosmic theme initialized.<br>
+            ✦ Space journal added.<br>
+            ✦ Little neko mascot ready!
+        </div>
+
+    </div>
+</section>
+
+<section class="panel" id="journal">
+
+    <div class="panel-title">
+        <span>✎ Cosmic Journal</span>
+        <span>☆</span>
+    </div>
+
+    <div class="panel-body">
+
+        <article>
+
+            <time datetime="2026-11-24">
+                24 November 2026
+            </time>
+
+            <h3>Menjelajahi Dunia Kreativitas Digital</h3>
+
+            <span class="tag">Digital Life</span>
+
+            <p>
+                Internet memberikan ruang yang luas untuk
+                mencoba berbagai ide kreatif. Melalui
+                sebuah website sederhana, kita dapat
+                bereksperimen dengan warna, ilustrasi,
+                tata letak, dan berbagai bentuk ekspresi.
+            </p>
+
+            <p>
+                Neko Station menjadi tempat untuk menikmati
+                proses tersebut sambil terus mempelajari
+                hal baru tentang desain dan teknologi.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Keindahan Langit Malam</h3>
+
+            <span class="tag">Space Dreams</span>
+
+            <p>
+                Langit malam selalu menghadirkan suasana
+                yang berbeda. Bintang, bulan, dan warna
+                gelap yang tenang memberikan banyak
+                inspirasi untuk berkarya.
+            </p>
+
+            <p>
+                Perpaduan ungu, lavender, dan magenta
+                pada website ini terinspirasi oleh
+                suasana luar angkasa yang penuh imajinasi.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Belajar Membuat Website Personal</h3>
+
+            <span class="tag">Web Development</span>
+
+            <p>
+                HTML dan CSS merupakan dasar yang menarik
+                untuk dipelajari. Dengan memahami keduanya,
+                kita bisa membangun halaman web yang
+                memiliki karakter dan identitas visual sendiri.
+            </p>
+
+            <p>
+                Website personal tidak harus rumit.
+                Desain sederhana dengan ide yang jelas
+                sudah cukup untuk menciptakan pengalaman
+                yang menyenangkan bagi pengunjung.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- SIDEBAR KANAN -->
+
+<aside class="right">
+
+<section class="panel" id="blogroll">
+
+    <div class="panel-title">
+        <span>♡ Cosmic Blogroll</span>
+        <span>☆</span>
+    </div>
+
+    <div class="panel-body">
+
+        <p class="small">
+            Related website collection:
+        </p>
+
+        <ul class="blogroll">
+
+            <li>
+                <a href="https://bucin4d.mx/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ☆ BUCIN4D.MX <span>↗</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://bucin4d.fr/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ☆ BUCIN4D.FR <span>↗</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://bucin4d.id/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ☆ BUCIN4D.ID <span>↗</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://bucin4d.in/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ☆ BUCIN4D.IN <span>↗</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://bucin4d.eu/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ☆ BUCIN4D.EU <span>↗</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <p class="small center">
+            ✧ Explore the little universe ✧
+        </p>
+
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>☆ Space Stamps</span>
+        <span>♡</span>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="stamps">
+
+            <span class="stamp pink">
+                NEKO<br>POWER
+            </span>
+
+            <span class="stamp">
+                COSMIC<br>DREAMS
+            </span>
+
+            <span class="stamp green">
+                MADE WITH<br>HTML
+            </span>
+
+            <span class="stamp">
+                SPACE CAT<br>CLUB
+            </span>
+
+            <span class="stamp pink">
+                OLD WEB<br>FOREVER
+            </span>
+
+            <span class="stamp green">
+                GITHUB<br>PAGES
+            </span>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>☾ Moon Message</span>
+    </div>
+
+    <div class="panel-body center">
+
+        <div class="kaomoji">
+            (｡•́‿•̀｡)
+        </div>
+
+        <p>
+            Even the smallest star
+            has its own beautiful light.
+        </p>
+
+        <div class="stars">
+            ✧ ♡ ✧
+        </div>
+
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel-title">
+        <span>♡ Sleeping Neko</span>
+    </div>
+
+    <div class="panel-body center">
+
+        <pre style="color:#ed91d2;font-size:15px;">
+ /\___/\
+( - w - ) zZ
+ /  ♡  \
+        </pre>
+
+        <p class="small">
+            Currently dreaming about stars.
+        </p>
+
+    </div>
+</section>
+
+</aside>
+
+</div>
+
+<footer>
+
+    <div class="stars">
+        ✧ ☾ ♡ ☾ ✧
+    </div>
+
+    <p>
+        <strong>Bucin Neko Station — Since 2026</strong>
+    </p>
+
+    <p>
+        Handmade with HTML, CSS and cosmic cat magic.
+    </p>
+
+    <p>
+        Hosted on
+        <a href="https://pages.github.com/">
+            GitHub Pages
+        </a>
+    </p>
+
+    <p>
+        © 2026 Bucin Neko Station |
+        <a href="#home">Back to Top ↑</a>
+    </p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
